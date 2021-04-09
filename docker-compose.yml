@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api-server:
+    image: api-server
+    ports:
+      - "5000:5000"
+    networks:
+      - node-app
+networks:
+  node-app:
+    driver: bridge
+
