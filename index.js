@@ -1,5 +1,4 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const processingDataRouter = require('./routes/processing-data-router')
@@ -7,9 +6,9 @@ const processingDataRouter = require('./routes/processing-data-router')
 const app = express()
 const apiPort = 5000
 
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({extended: true}));
 app.use(cors())
-app.use(bodyParser.json())
+app.use(express.json())
 
 
 app.get('/', (req, res) => {
