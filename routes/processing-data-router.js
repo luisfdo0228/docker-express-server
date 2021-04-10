@@ -4,6 +4,6 @@ const ProcessingDataCtrl = require('../controllers/processing-data-ctrl')
 
 const router = express.Router()
 
-router.get('/processing', ProcessingDataCtrl.getInvertedText)
+router.get('/iecho', ProcessingDataCtrl.getInvertedText)
 
 module.exports = router
