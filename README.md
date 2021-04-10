@@ -13,6 +13,16 @@ This project will help you to identify whether or not a string is a palindrome a
 
 `docker-compose down`
 
+
+# Supertest unit test
+REST API test using supertest and mocha
+
+# Run test
+```
+npm test
+```
+
+
 ## Processing data
 ### iecho
 
