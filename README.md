@@ -18,9 +18,10 @@ This project will help you to identify whether or not a string is a palindrome a
 REST API test using supertest and mocha
 
 # Run test
-```
-npm test
-```
+
+`npm install`
+
+`npm test`
 
 
 ## Processing data
