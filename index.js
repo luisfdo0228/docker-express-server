@@ -15,3 +15,5 @@ app.get('/', (req, res) => { res.send('Here Toolbox!') })
 app.use('/api', processingDataRouter)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
+
+module.exports = app
