@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const corsMiddleware = require('./cors')
 
 const processingDataRouter = require('./routes/processing-data-router')
 
@@ -10,7 +11,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, res) => { res.send('Here Toolbox!') })
+app.get('/', corsMiddleware, (req, res) => { res.send('Here Toolbox!') })
 
 app.use('/api', processingDataRouter)
 
